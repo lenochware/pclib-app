@@ -1,0 +1,16 @@
+{
+	"name": "lenochware/pclib-app",
+	"description": "Základní šablona PClib aplikace.",
+	"homepage": "https://pclib.brambor.net",
+	"type": "project",
+	"license": ["MIT", "LGPL"],
+	"authors": [
+		{
+			"name": "lenochware"
+		}
+	],
+
+  "require": {
+      "lenochware/pclib": "^2.6"
+  }
+}
