@@ -2,16 +2,21 @@
 
 $config = [
 
-	'pclib.security' => array(
+	'pclib.security' => [
 		'tpl-escape' => true,
-		'csrf' => true,
+		'csrf' => false,
 		'form-prevent-mass' => false
-	),
+	],
 
-	'pclib.auth' => array(
+	'pclib.auth' => [	
+		/* Doporučuji bezpečnější algoritmus 'bcrypt' */
 		'algo' => 'md5', 
-		'secret' => '5dOPz4g$pQ+',
-	),
+
+		/* Zadejte nahodny text (mala a velka pismena, cislice a znaky) */
+		'secret' => '',
+	],
+
+	'pclib.errors' => ['display', 'log', 'template' => 'tpl/error.tpl'],
 
 	'pclib.app' => [
 		'auth' => true,
@@ -36,8 +41,6 @@ $develop = [
 ];
 
 $production = [
-	'pclib.errors' => ['display', 'log', 'template' => 'tpl/error.tpl'],
-
 	'pclib.app' => [
 		'db' => 'pdo_mysql://root@localhost/kurzy/utf8',
 	]

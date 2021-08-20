@@ -1,5 +1,5 @@
 <?elements
-head HEAD scripts "css/website.css,js/global.js,js/pclib.js"
+head HEAD scripts "css/website.css,js/global.js,vendor/lenochware/pclib/pclib/assets/pclib.js"
 messages PRECONTENT
 string APPNAME
 string TITLE
@@ -27,6 +27,10 @@ navigator NAVIG
 	  <script src="js/global.js"></script>
 	</head>
 	<body>
+	  <noscript>
+	  	<div class="alert alert-danger">Ve Vašem prohlížeči není povoleno spouštění Javascriptu. Je možné, že některé funkce nebudou fungovat správně. Pro plnou funkčnost doporučujeme povolit Javascript.</div>
+	  </noscript>
+
 		<div id="site-top">
 		<i class="fas fa-check-circle" style="color: #665b7a; font-size:50px; padding: 10px" aria-hidden="true"></i>
 		</div>
