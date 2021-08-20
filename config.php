@@ -24,7 +24,7 @@ $config = [
 		'upload-dir' => 'uploaded',
 		'language' => 'cs',
 		'friendly-url' => true,
-		'default-route' => 'home',
+		'default-route' => 'example',
 		'layout' => 'tpl/layout.tpl',
 	]
 

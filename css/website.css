@@ -6,6 +6,7 @@ body {
 }
 
 .hidden { display:none; }
+.flex { display:flex; }
 
 .message {
   width: 500px;

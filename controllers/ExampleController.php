@@ -1,10 +1,10 @@
 <?php
 
-class HomeController extends BaseController {
+class ExampleController extends BaseController {
 
 function indexAction()
 {
-  return $this->template('tpl/home/welcome.tpl');
+  return $this->template('tpl/example/welcome.tpl', ['version' => PCLIB_VERSION]);
 }
 
 function helloAction()
