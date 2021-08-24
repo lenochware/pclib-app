@@ -9,7 +9,7 @@ $config = [
 	],
 
 	'pclib.auth' => [	
-		/* Doporučuji bezpečnější algoritmus 'bcrypt' */
+		/* Doporucuji bezpecnejsi algoritmus 'bcrypt' */
 		'algo' => 'md5', 
 
 		/* Zadejte nahodny text (mala a velka pismena, cislice a znaky) */
@@ -19,11 +19,11 @@ $config = [
 	'pclib.errors' => ['display', 'log', 'template' => 'tpl/error.tpl'],
 
 	'pclib.app' => [
-		'auth' => true,
+		'db' => '',		
+		'auth' => false,
 		'logger' => false,
-		'upload-dir' => 'uploaded',
+		'file-storage' => false,
 		'language' => 'cs',
-		'friendly-url' => true,
 		'default-route' => 'example',
 		'layout' => 'tpl/layout.tpl',
 	]
@@ -34,15 +34,17 @@ $develop = [
 	'pclib.errors' => ['display', 'develop'],
 
 	'pclib.app' => [
-		'db' => 'pdo_mysql://root@localhost/kurzy/utf8',
-		'debugbar' => true,
+		/* Nastavte databazove pripojeni pro vyvojovy server napr. 'pdo_mysql://root@localhost/nazev-databaze/utf8'. */
+		'db' => '',
+		'debugbar' => false,
 	]
 
 ];
 
 $production = [
+	/* Nastavte databazove pripojeni pro produkcni server. */
 	'pclib.app' => [
-		'db' => 'pdo_mysql://root@localhost/kurzy/utf8',
+		'db' => '',
 	]
 
 ];
