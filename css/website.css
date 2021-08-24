@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family:  Verdana, Arial; font-size: 12px;
+  font-family:  Verdana, Arial; font-size: 16px;
   background-color: white;
 }
 
@@ -19,4 +19,8 @@ body {
 label.required:before {
   content: "(*) ";
   color:red;
+}
+
+#site-top {
+  background: linear-gradient(90deg, rgba(255,255,255,1) 50%, #FFD20F 100%); 
 }
