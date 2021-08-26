@@ -45,8 +45,15 @@ Klíč 'pclib.auth' - konfigurace autorizačního systému.
 Klíč 'pclib.errors' určuje zobrazení chybových hlášení. Na developu se zobrazují s podrobným developerským výpisem,
 	na produkčním serveru se z bezpečnostích důvodů zobrazí pouze šablona s hlášením a chyba se zaloguje.
 
-Klíč 'pclib.app' 
+Klíč 'pclib.app' určuje základní konfiguraci aplikace a jejích služeb.
 
+* db - Připojení k databázi
+*	auth - Autentifikace
+* logger - Logování
+* file-storage - Ukládání souborů prostřednictvím třídy FileStorage
+* language - Jazyk aplikace (např. 'cs')
+* default-route - Implicitní stránka (např. 'home/index')
+* layout - Cesta k šabloně layoutu aplikace
 
 ### Odkazy
 * [PClib homepage](http://pclib.brambor.net/)

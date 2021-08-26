@@ -1,8 +1,11 @@
 <style>
-	.title-page {
-		background-color: #665b7a;
+	.strip {
+  	background: linear-gradient(to left,#cc2b5e,#753a88);
+  	height: .5em;
+	}
+	.page {
+  	background: #665b7a;
 		color: white;
-		height: 40vh;
 		padding: 1em;
 	}
 
@@ -12,12 +15,11 @@
 
 	.cols {
 		justify-content: space-between;
-
+		gap: .5em;
 	}
 
 	.cols div {
-		width: 30%;
-		text-align: center;
+		flex: 1;
 		background: black;
 		padding: 1em;
 		border-radius: 5px;
@@ -32,13 +34,13 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-
-<div class="title-page">
+<div class="strip"></div>
+<div class="page">
 	<h1 class="animate__animated animate__flipInX">Instalace byla úspěšná!</h1>
 
 	<p>Toto je šablona aplikace pro pclib v{version}.</p>
 
-	<p>Text naleznete v souboru <b>tpl/example/welcome.tpl</b>.</p>
+	<p>Text stránky naleznete v souboru <b>tpl/example/welcome.tpl</b>.</p>
 
 	<div class="flex cols">
 		<div>
@@ -67,6 +69,8 @@
 			</ul>
 		</div>
 	</div>
+
+	<p>Blablablabla</p>
 
 </div>
 
