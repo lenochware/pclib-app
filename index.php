@@ -8,7 +8,7 @@ include 'controllers/BaseController.php';
 
 session_start();
 
-$app = new PCApp('nazev-aplikace');
+$app = new PCApp('Vaše aplikace');
 $app->addConfig('./config.php');
 
 //$pclib->autoloader->addDirectory('libs');
