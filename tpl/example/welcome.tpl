@@ -1,14 +1,14 @@
 <style>
 	.welcome-main {
 		margin-top: 5em;
-		background: linear-gradient(127deg, #eee, #fff, #eee);
-		padding: 0.5em 1em;
+		padding: 0.5em 5vw;
 	}
 
 	.welcome-top {
 		padding: 1em;
 		border-bottom: 3px solid #c30;
 		background-color: #ffd20f;
+		background: linear-gradient(127deg, #ffd20f 75%, #cca200);
 	}
 
 	.welcome-bottom {
@@ -27,7 +27,9 @@
 		flex: 1;
 		background: #c4cedc;
 		padding: 1em;
+		border: 1px solid #999;
 		border-radius: 5px;
+		background: linear-gradient(127deg, #c4cedc, #dccec4);
 		
 	}
 	 .cols a {
@@ -36,6 +38,10 @@
 
 	 a {
 	 	color: #333;
+	 }
+
+	 a:hover {
+	 	color: purple;
 	 }
 
 	 h1 {
@@ -55,6 +61,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
 
 <div class="welcome-top">
 <h1><i class="fas fa-check-circle" aria-hidden="true"></i> {title}</h1>
@@ -94,7 +102,7 @@
 		</div>
 	</div>
 
-	<p><a href="https://github.com/lenochware/pclib-app">Dokumentace</a></p>
+	<p><a href="https://github.com/lenochware/pclib-app">Dokumentace šablony</a></p>
 </div>
 
 <div class="welcome-bottom">
