@@ -3,7 +3,7 @@
  * \file
  * Pclib Application Template.
  */
-include '../pclib/pclib/pclib.php';
+include 'vendor/autoload.php';
 include 'controllers/BaseController.php';
 
 session_start();
