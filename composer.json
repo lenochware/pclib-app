@@ -3,7 +3,7 @@
 	"description": "Základní šablona PClib aplikace.",
 	"homepage": "https://pclib.brambor.net",
 	"type": "project",
-	"license": ["MIT", "LGPL"],
+	"license": ["MIT"],
 	"authors": [
 		{
 			"name": "lenochware"
