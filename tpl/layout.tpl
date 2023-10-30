@@ -1,5 +1,5 @@
 <?elements
-head HEAD scripts "css/website.css,js/global.js,vendor/lenochware/pclib/pclib/assets/pclib.js"
+head HEAD scripts "css/website.css,js/global.js,{pclib}/www/pclib.js"
 messages PRECONTENT
 string APPNAME
 string TITLE
@@ -31,9 +31,9 @@ navigator NAVIG
 	  	<div class="alert alert-danger">Ve Vašem prohlížeči není povoleno spouštění Javascriptu. Je možné, že některé funkce nebudou fungovat správně. Pro plnou funkčnost doporučujeme povolit Javascript.</div>
 	  </noscript>
 
-		<div id="site-content">
+		<main>
 			{PRECONTENT}{CONTENT}
-		</div>
+		</main>
 
 		<script>
 			$(document).ready(init_global);

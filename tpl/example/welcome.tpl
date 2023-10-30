@@ -1,3 +1,7 @@
+<?elements
+string title
+string version
+?>
 <style>
 	.welcome-main {
 		margin-top: 5em;
@@ -96,6 +100,7 @@
 			<ul>
 				<li><a href="https://pclib.brambor.net/demo/">Pclib Demo</a></li>
 				<li><a href="https://pclib.brambor.net/docs/pclib_verze_2.pdf">Novinky v Pclib 2 (pdf)</a></li>
+				<li><a href="https://pclib.brambor.net/docs/Pclib_verze_2.8.pdf">Novinky v Pclib 2.8 (pdf)</a></li>
 				<li><a href="https://pclib.brambor.net/docs/Pclib_orm.pdf">Něco k pclib ORM (pdf)</a></li>
 				<li><a href="https://pclib.brambor.net/refman/latest/">Referenční manuál</a></li>
 			</ul>
