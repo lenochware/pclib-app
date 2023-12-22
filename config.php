@@ -16,8 +16,6 @@ $config = [
 		'secret' => '',
 	],
 
-	'pclib.errors' => ['display', 'log', 'template' => 'tpl/error.tpl'],
-
 	'pclib.app' => [
 		'db' => '',		
 		'auth' => false,
@@ -42,6 +40,8 @@ $develop = [
 ];
 
 $production = [
+	'pclib.errors' => ['display', 'log', 'template' => 'tpl/error.tpl'],
+
 	/* Nastavte databazove pripojeni pro produkcni server. */
 	'pclib.app' => [
 		'db' => '',
