@@ -11,6 +11,6 @@
 	],
 
   "require": {
-      "lenochware/pclib": "^2.6"
+      "lenochware/pclib": ">=2.9.0"
   }
 }

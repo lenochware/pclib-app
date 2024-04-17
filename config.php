@@ -9,8 +9,8 @@ $config = [
 	],
 
 	'pclib.auth' => [	
-		/* Doporucuji bezpecnejsi algoritmus 'bcrypt' */
-		'algo' => 'md5', 
+		/* Dalsi moznosti: 'md5', 'bcrypt-md5' */
+		'algo' => 'bcrypt', 
 
 		/* Zadejte nahodny text (mala a velka pismena, cislice a znaky) */
 		'secret' => '',
@@ -29,7 +29,7 @@ $config = [
 ];
 
 $develop = [
-	'pclib.errors' => ['display', 'develop'],
+	'pclib.errors' => ['display' => true, 'develop' => true],
 
 	'pclib.app' => [
 		/* Nastavte databazove pripojeni pro vyvojovy server napr. 'pdo_mysql://root@localhost/nazev-databaze/utf8'. */
@@ -40,7 +40,7 @@ $develop = [
 ];
 
 $production = [
-	'pclib.errors' => ['display', 'log', 'template' => 'tpl/error.tpl'],
+	'pclib.errors' => ['display' => true, 'develop' => false, 'log' => true, /*'template' => 'tpl/error.tpl' */],
 
 	/* Nastavte databazove pripojeni pro produkcni server. */
 	'pclib.app' => [
