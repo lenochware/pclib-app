@@ -16,37 +16,25 @@ $config = [
 		'secret' => '',
 	],
 
+	'service.fileStorage' => ['rootDir' => './uploaded'],
+
 	'pclib.app' => [
-		'db' => '',		
-		'auth' => false,
-		'logger' => false,
-		'file-storage' => false,
 		'language' => 'cs',
 		'default-route' => 'example',
 		'layout' => 'tpl/layout.tpl',
+		//'autostart' => ['db', 'auth', 'fileStorage'],
 	]
 
 ];
 
 $develop = [
 	'pclib.errors' => ['display' => true, 'develop' => true],
-
-	'pclib.app' => [
-		/* Nastavte databazove pripojeni pro vyvojovy server napr. 'pdo_mysql://root@localhost/nazev-databaze/utf8'. */
-		'db' => '',
-		'debugbar' => false,
-	]
-
+	'service.db' => ['dsn' => 'pdo_mysql://user:password@localhost/test-app'],
 ];
 
 $production = [
-	'pclib.errors' => ['display' => true, 'develop' => false, 'log' => true, /*'template' => 'tpl/error.tpl' */],
-
-	/* Nastavte databazove pripojeni pro produkcni server. */
-	'pclib.app' => [
-		'db' => '',
-	]
-
+	'pclib.errors' => ['display' => true, 'develop' => false, 'log' => true],
+	'service.db' => ['dsn' => 'pdo_mysql://user:password@localhost/test-app'],
 ];
 
 ?>

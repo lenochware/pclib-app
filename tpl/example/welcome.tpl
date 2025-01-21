@@ -75,7 +75,7 @@ string version
 <div class="welcome-main">
 	<h1 class="animate__animated animate__flipInX">Instalace byla úspěšná!</h1>
 
-	<p>Toto je šablona aplikace pro <b>pclib v{version}</b>.</p>
+	<p>Toto je šablona aplikace pro <b>pclib v3.2.0</b>.</p>
 
 	<p>Zdrojový kód této stránky naleznete v souboru <b>tpl/example/welcome.tpl</b>.</p>
 
@@ -98,11 +98,10 @@ string version
 		<div>
 			<h2>Dokumentace</h2>
 			<ul>
-				<li><a href="https://pclib.brambor.net/demo/">Pclib Demo</a></li>
-				<li><a href="https://pclib.brambor.net/docs/pclib_verze_2.pdf">Novinky v Pclib 2 (pdf)</a></li>
-				<li><a href="https://pclib.brambor.net/docs/Pclib_verze_2.9.pdf">Novinky v Pclib 2.9 (pdf)</a></li>
-				<li><a href="https://pclib.brambor.net/docs/Pclib_orm.pdf">Něco k pclib ORM (pdf)</a></li>
+				<li><a href="https://pclib.brambor.net/?r=home/docs">Dokumentace</a></li>
+				<li><a href="https://pclib.brambor.net//?r=examples">Příklady</a></li>
 				<li><a href="https://pclib.brambor.net/refman/latest/">Referenční manuál</a></li>
+				<li><a href="https://pclib.brambor.net/docs/Pclib_orm.pdf">Něco k pclib ORM (pdf)</a></li>
 			</ul>
 		</div>
 	</div>
