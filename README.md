@@ -18,7 +18,7 @@ composer create-project lenochware/padmin www/adresar-aplikace/admin
 
 * /controllers - obsahuje kontrolery vaší aplikace - všechny můžete odvodit od BaseController,
 kam lze přidat funkce společné pro celou aplikaci. Přepsáním metody defaultAction můžete změnit 
-chybovou hlášku "Stránka nenalezena". Obsahuje vzorový HomeController.
+chybovou hlášku "Stránka nenalezena". Obsahuje vzorový ExampleController.
 
 * /tpl - Adresář šablon. Každý kontroler zde má svůj podadresář se šablonami. 
 Obsahuje šablonu layout.tpl - html layout aplikace a error.tpl, která se zobrazí v případě chyby.
@@ -47,19 +47,14 @@ Klíč 'pclib.errors' určuje zobrazení chybových hlášení. Na developu se z
 
 Klíč 'pclib.app' určuje základní konfiguraci aplikace a jejích služeb.
 
-* db - Připojení k databázi
-*	auth - Autentifikace
-* logger - Logování
-* file-storage - Ukládání souborů prostřednictvím třídy FileStorage
 * language - Jazyk aplikace (např. 'cs')
 * default-route - Implicitní stránka (např. 'home/index')
 * layout - Cesta k šabloně layoutu aplikace
+* autostart - Služby, které aplikace používá
 
 ### Odkazy
 * [PClib homepage](http://pclib.brambor.net/)
 
 ### License
-This library is free software; you can redistribute it and/or
- modify it under the terms of the GNU Lesser General Public
- License as published by the Free Software Foundation; either
- version 2.1 of the License, or (at your option) any later version.
+This source code is licensed under the MIT license found in the LICENSE file
+in the root directory of this source tree.
