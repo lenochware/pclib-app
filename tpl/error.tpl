@@ -9,9 +9,16 @@ string route
 string timestamp
 string trace
 ?>
+<!DOCTYPE html>
 <html>
+	<head>
+		<title>Chyba aplikace</title>
+	</head>
 	<body>
-		<h1>Chyba aplikace</h1>
-		<p>Aplikace vyvolala chybu: "{message}" ({timestamp}).</p>
+		<h1>Omlouváme se</h1>
+		<p>Aplikace přestala fungovat.</p>
+		<p>Zkuste znovu načíst stránku za chvíli. Pokud potíže přetrvávají, kontaktujte náš tým podpory <a href="mailto:support@example.com">support team</a>.</p>
+		<p><a href="/">Zpět na domovskou stránku</a></p>
+		<p style="color:gray">{exceptionClass} in <b>{route}</b>, timestamp: {timestamp}.</p>
 	</body>
 </html>

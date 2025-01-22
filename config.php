@@ -12,7 +12,7 @@ $config = [
 		/* Dalsi moznosti: 'md5', 'bcrypt-md5' */
 		'algo' => 'bcrypt', 
 
-		/* Zadejte nahodny text (mala a velka pismena, cislice a znaky) */
+		/* Zadejte nahodny text min. 10 znaku (mala a velka pismena, cislice a znaky) */
 		'secret' => '',
 	],
 
@@ -29,12 +29,12 @@ $config = [
 
 $develop = [
 	'pclib.errors' => ['display' => true, 'develop' => true],
-	'service.db' => ['dsn' => 'pdo_mysql://user:password@localhost/test-app'],
+	//'service.db' => ['dsn' => 'pdo_mysql://user:password@localhost/test-app'],
 ];
 
 $production = [
-	'pclib.errors' => ['display' => true, 'develop' => false, 'log' => true],
-	'service.db' => ['dsn' => 'pdo_mysql://user:password@localhost/test-app'],
+	'pclib.errors' => ['display' => true, 'develop' => false, 'log' => true, 'template' => 'tpl/error.tpl'],
+	//'service.db' => ['dsn' => 'pdo_mysql://user:password@localhost/test-app'],
 ];
 
 ?>
