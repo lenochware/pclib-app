@@ -56,5 +56,4 @@ Klíč 'pclib.app' určuje základní konfiguraci aplikace a jejích služeb.
 * [PClib homepage](http://pclib.brambor.net/)
 
 ### License
-This source code is licensed under the MIT license found in the LICENSE file
-in the root directory of this source tree.
+This source code is licensed under The MIT License (MIT) https://opensource.org/license/MIT
