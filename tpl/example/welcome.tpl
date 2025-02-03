@@ -98,10 +98,10 @@ string version
 		<div>
 			<h2>Dokumentace</h2>
 			<ul>
-				<li><a href="https://pclib.brambor.net/?r=home/docs">Dokumentace</a></li>
-				<li><a href="https://pclib.brambor.net//?r=examples">Příklady</a></li>
+				<li><a href="https://pclib.brambor.net/docs">Dokumentace</a></li>
+				<li><a href="https://pclib.brambor.net/examples">Příklady</a></li>
 				<li><a href="https://pclib.brambor.net/refman/latest/">Referenční manuál</a></li>
-				<li><a href="https://pclib.brambor.net/docs/Pclib_orm.pdf">Něco k pclib ORM (pdf)</a></li>
+				<li><a href="https://pclib.brambor.net/documents/Pclib_orm.pdf">Něco k pclib ORM (pdf)</a></li>
 			</ul>
 		</div>
 	</div>
